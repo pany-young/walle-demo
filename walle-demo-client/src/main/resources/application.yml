@@ -1,0 +1,13 @@
+server:
+  port: 9003
+
+spring:
+  application:
+    name: walle-demo-client
+
+registry:
+  address: 127.0.0.1:2181
+
+
+logging:
+  config: classpath:logback.xml
