@@ -14,6 +14,7 @@
 
 
     <properties>
+        <walle.version>0.0.3-SNAPSHOT</walle.version>
         <lombok.version>1.16.4</lombok.version>
         <aspectj.version>1.7.0</aspectj.version>
         <spring.version>4.2.5.RELEASE</spring.version>
@@ -30,17 +31,17 @@
         <dependency>
             <groupId>cn.pany.walle</groupId>
             <artifactId>walle-common</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
+            <version>${walle.version}</version>
         </dependency>
         <dependency>
             <groupId>cn.pany.walle</groupId>
             <artifactId>walle-config</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
+            <version>${walle.version}</version>
         </dependency>
         <dependency>
             <groupId>cn.pany.walle</groupId>
             <artifactId>walle-remoting</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
+            <version>${walle.version}</version>
         </dependency>
         <dependency>
             <groupId>org.aspectj</groupId>
@@ -152,6 +153,14 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>6</source>
+                    <target>6</target>
+                </configuration>
             </plugin>
         </plugins>
     </build>

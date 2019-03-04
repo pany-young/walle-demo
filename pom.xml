@@ -20,48 +20,18 @@
     </modules>
 
     <properties>
+        <walle.version>0.0.3-SNAPSHOT</walle.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>1.8</java.version>
         <spring-cloud.version>Finchley.SR1</spring-cloud.version>
     </properties>
 
+
     <dependencies>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter</artifactId>
-        </dependency>
 
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
-        </dependency>
 
-        <dependency>
-            <groupId>cn.pany.walle</groupId>
-            <artifactId>walle-common</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-        </dependency>
-        <dependency>
-            <groupId>cn.pany.walle</groupId>
-            <artifactId>walle-config</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-        </dependency>
-        <dependency>
-            <groupId>cn.pany.walle</groupId>
-            <artifactId>walle-remoting</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-        </dependency>
-        <dependency>
-            <groupId>cn.pany.walle</groupId>
-            <artifactId>walle-demo</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-        </dependency>
+
 
         <!-- LOGGING begin -->
         <dependency>
@@ -100,6 +70,40 @@
                 <version>${spring-cloud.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
+            </dependency>
+            <!--<dependency>-->
+                <!--<groupId>org.springframework.boot</groupId>-->
+                <!--<artifactId>spring-boot-starter-web</artifactId>-->
+            <!--</dependency>-->
+            <!--<dependency>-->
+                <!--<groupId>org.springframework.cloud</groupId>-->
+                <!--<artifactId>spring-cloud-starter</artifactId>-->
+            <!--</dependency>-->
+
+            <!--<dependency>-->
+                <!--<groupId>org.springframework.boot</groupId>-->
+                <!--<artifactId>spring-boot-starter-test</artifactId>-->
+                <!--<scope>test</scope>-->
+            <!--</dependency>-->
+            <dependency>
+                <groupId>cn.pany.walle</groupId>
+                <artifactId>walle-common</artifactId>
+                <version>${walle.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>cn.pany.walle</groupId>
+                <artifactId>walle-config</artifactId>
+                <version>${walle.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>cn.pany.walle</groupId>
+                <artifactId>walle-remoting</artifactId>
+                <version>${walle.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>cn.pany.walle</groupId>
+                <artifactId>walle-demo</artifactId>
+                <version>0.0.1-SNAPSHOT</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

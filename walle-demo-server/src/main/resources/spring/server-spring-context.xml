@@ -23,7 +23,7 @@
         <constructor-arg name="registryAddress" value="${registry.address}"/>
     </bean>
 
-    <bean id="walleServer" class="cn.pany.walle.remoting.server.WalleServer">
+    <bean id="walleServer" class="cn.pany.walle.remoting.server.WalleSmartServer">
         <constructor-arg name="port" value="8890"/>
         <constructor-arg name="walleRegistry" ref="serviceRegistry"/>
     </bean>
