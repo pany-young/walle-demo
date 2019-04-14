@@ -5,7 +5,7 @@ import cn.pany.walle.common.annotation.WalleRpcService;
 /**
  * Created by pany on 16/8/25.
  */
-@WalleRpcService(appName = "demo-server",value = Demo1Service.class) // 指定远程接口
+//@WalleRpcService(appName = "demo-server",value = Demo1Service.class) // 指定远程接口
 public class Demo1ServiceImpl implements Demo1Service {
 
     @Override

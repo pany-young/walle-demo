@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<configuration>  
-  
+<configuration>
+    <property name="LOG_HOME" value="/data/logs/demo_walle" />
     <!-- ch.qos.logback.core.ConsoleAppender 控制台输出 -->  
     <appender name="console" class="ch.qos.logback.core.ConsoleAppender">  
         <encoder>  
@@ -10,9 +10,10 @@
   
     <!-- ch.qos.logback.core.rolling.RollingFileAppender 文件日志输出 -->  
     <appender name="file" class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <File>/do/logs/demo_walle/demo-client.log</File>
+        <File>${LOG_HOME}/demo-client.log</File>
         <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
-            <FileNamePattern>demo-client-%i-%d{yyyy-MM-dd}.log</FileNamePattern>
+
+            <FileNamePattern>${LOG_HOME}/demo-client-%i-%d{yyyy-MM-dd}.log</FileNamePattern>
             <MaxHistory>10</MaxHistory>
             <maxFileSize>5MB</maxFileSize>
         </rollingPolicy>

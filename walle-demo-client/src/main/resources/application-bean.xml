@@ -17,6 +17,7 @@
     <walle:app id="demoServer" appName="demo-server" registry="clientRegistry" ></walle:app>
 
     <walle:reference interface="cn.pany.walle.demo.server.service.HelloService" app="demoServer" id="helloService"></walle:reference>
+    <walle:reference interface="cn.pany.walle.demo.server.service.Demo1Service" app="demoServer" id="demo1Service"></walle:reference>
 
 
 </beans>
